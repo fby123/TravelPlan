@@ -1,7 +1,7 @@
 <view class="container">
   <!-- 顶部banner -->
   <view class="banner">
-    <image class="banner-img" src="/images/banner.jpg" mode="aspectFill"></image>
+    <image class="banner-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=travel%20banner%20with%20mountains%20and%20ocean&image_size=landscape_16_9" mode="aspectFill"></image>
     <view class="banner-content">
       <text class="banner-title">发现精彩旅程</text>
       <text class="banner-subtitle">探索世界各地的旅游攻略</text>
@@ -51,25 +51,25 @@
     <view class="feature-list">
       <view class="feature-item fade-in touch-feedback" bindtap="goToGenerate" style="animation-delay: 0.1s;">
         <view class="feature-icon generate-icon">
-          <image class="feature-icon-img" src="/images/icon-generate.png" mode="aspectFit"></image>
+          <image class="feature-icon-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=generate%20icon%20simple%20blue&image_size=square" mode="aspectFit"></image>
         </view>
         <text class="feature-text">生成攻略</text>
       </view>
       <view class="feature-item fade-in touch-feedback" bindtap="goToRoute" style="animation-delay: 0.2s;">
         <view class="feature-icon route-icon">
-          <image class="feature-icon-img" src="/images/icon-route.png" mode="aspectFit"></image>
+          <image class="feature-icon-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=route%20map%20icon%20simple%20blue&image_size=square" mode="aspectFit"></image>
         </view>
         <text class="feature-text">路线规划</text>
       </view>
       <view class="feature-item fade-in touch-feedback" bindtap="goToCollection" style="animation-delay: 0.3s;">
         <view class="feature-icon collection-icon">
-          <image class="feature-icon-img" src="/images/icon-collection.png" mode="aspectFit"></image>
+          <image class="feature-icon-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=collection%20star%20icon%20simple%20blue&image_size=square" mode="aspectFit"></image>
         </view>
         <text class="feature-text">我的收藏</text>
       </view>
       <view class="feature-item fade-in touch-feedback" bindtap="goToProfile" style="animation-delay: 0.4s;">
         <view class="feature-icon profile-icon">
-          <image class="feature-icon-img" src="/images/icon-profile.png" mode="aspectFit"></image>
+          <image class="feature-icon-img" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=profile%20user%20icon%20simple%20blue&image_size=square" mode="aspectFit"></image>
         </view>
         <text class="feature-text">个人中心</text>
       </view>

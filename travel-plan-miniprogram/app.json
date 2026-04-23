@@ -17,27 +17,19 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/tab-home.png",
-        "selectedIconPath": "images/tab-home.png"
+        "text": "首页"
       },
       {
         "pagePath": "pages/search/search",
-        "text": "攻略检索",
-        "iconPath": "images/tab-search.png",
-        "selectedIconPath": "images/tab-search.png"
+        "text": "攻略检索"
       },
       {
         "pagePath": "pages/route/route",
-        "text": "路线规划",
-        "iconPath": "images/tab-route.png",
-        "selectedIconPath": "images/tab-route.png"
+        "text": "路线规划"
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "个人中心",
-        "iconPath": "images/tab-profile.png",
-        "selectedIconPath": "images/tab-profile.png"
+        "text": "个人中心"
       }
     ],
     "backgroundColor": "#ffffff",

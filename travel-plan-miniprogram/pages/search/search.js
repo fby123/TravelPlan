@@ -17,7 +17,7 @@ Page({
         budget: '中',
         views: 1234,
         desc: '涵盖故宫、长城、颐和园等经典景点，适合情侣出游',
-        image: '/images/destination-beijing.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Beijing%20travel%20guide&image_size=landscape_4_3'
       },
       {
         title: '上海2日网红打卡',
@@ -26,7 +26,7 @@ Page({
         budget: '低',
         views: 987,
         desc: '打卡外滩、陆家嘴、田子坊等网红景点',
-        image: '/images/destination-shanghai.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shanghai%20travel%20guide&image_size=landscape_4_3'
       },
       {
         title: '杭州2日西湖休闲',
@@ -35,7 +35,7 @@ Page({
         budget: '中',
         views: 765,
         desc: '西湖周边景点游览，适合家庭出游',
-        image: '/images/destination-hangzhou.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Hangzhou%20travel%20guide&image_size=landscape_4_3'
       }
     ]
   },

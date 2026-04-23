@@ -7,37 +7,37 @@ Page({
         title: '北京',
         desc: '帝都文化之旅',
         tag: '文化古迹',
-        image: '/images/destination-beijing.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Beijing%20Forbidden%20City&image_size=landscape_4_3'
       },
       {
         title: '上海',
         desc: '魔都现代风情',
         tag: '都市繁华',
-        image: '/images/destination-shanghai.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shanghai%20Bund%20skyline&image_size=landscape_4_3'
       },
       {
         title: '杭州',
         desc: '西湖风光无限',
         tag: '自然风光',
-        image: '/images/destination-hangzhou.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Hangzhou%20West%20Lake&image_size=landscape_4_3'
       },
       {
         title: '成都',
         desc: '美食休闲之都',
         tag: '美食之旅',
-        image: '/images/destination-beijing.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chengdu%20panda&image_size=landscape_4_3'
       },
       {
         title: '西安',
         desc: '千年古都探秘',
         tag: '历史文化',
-        image: '/images/destination-shanghai.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Xian%20Terracotta%20Army&image_size=landscape_4_3'
       },
       {
         title: '三亚',
         desc: '阳光沙滩海浪',
         tag: '海滨度假',
-        image: '/images/destination-hangzhou.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Sanya%20beach&image_size=landscape_4_3'
       }
     ],
     hotStrategies: [
@@ -48,7 +48,7 @@ Page({
         people: '情侣',
         views: 1234,
         level: '经典',
-        image: '/images/destination-beijing.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Beijing%20travel%20guide&image_size=landscape_4_3'
       },
       {
         title: '上海2日网红打卡',
@@ -57,7 +57,7 @@ Page({
         people: '独自',
         views: 987,
         level: '网红',
-        image: '/images/destination-shanghai.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Shanghai%20travel%20guide&image_size=landscape_4_3'
       },
       {
         title: '杭州西湖一日游',
@@ -66,7 +66,7 @@ Page({
         people: '家庭',
         views: 756,
         level: '轻松',
-        image: '/images/destination-hangzhou.jpg'
+        image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Hangzhou%20travel%20guide&image_size=landscape_4_3'
       }
     ]
   },
