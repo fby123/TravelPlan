@@ -9,9 +9,7 @@ App({
   
   initBaiduMap() {
     // 百度地图API初始化配置
-    wx.config({
-      // 百度地图API配置
-    })
+    console.log('初始化百度地图API')
   },
   
   login() {
