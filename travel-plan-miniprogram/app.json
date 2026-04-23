@@ -30,14 +30,14 @@
       {
         "pagePath": "pages/route/route",
         "text": "路线规划",
-        "iconPath": "images/icon-route.png",
-        "selectedIconPath": "images/icon-route.png"
+        "iconPath": "images/tab-route.png",
+        "selectedIconPath": "images/tab-route.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "个人中心",
-        "iconPath": "images/icon-profile.png",
-        "selectedIconPath": "images/icon-profile.png"
+        "iconPath": "images/tab-profile.png",
+        "selectedIconPath": "images/tab-profile.png"
       }
     ],
     "backgroundColor": "#ffffff",
