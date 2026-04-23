@@ -1,0 +1,76 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="search-bar">
+    <input 
+      class="search-input" 
+      placeholder="输入目的地检索攻略" 
+      value="{{keyword}}"
+      bindinput="onSearchInput"
+      bindconfirm="onSearch"
+    />
+    <button class="search-btn" bindtap="onSearch">搜索</button>
+  </view>
+  
+  <!-- 筛选条件 -->
+  <view class="filter-section">
+    <text class="filter-title">筛选条件</text>
+    
+    <view class="filter-item">
+      <text class="filter-label">出行天数</text>
+      <picker bindchange="onDaysChange" value="{{daysIndex}}" range="{{daysOptions}}">
+        <view class="picker">
+          {{daysOptions[daysIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="filter-item">
+      <text class="filter-label">出行人群</text>
+      <picker bindchange="onPeopleChange" value="{{peopleIndex}}" range="{{peopleOptions}}">
+        <view class="picker">
+          {{peopleOptions[peopleIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="filter-item">
+      <text class="filter-label">兴趣偏好</text>
+      <picker bindchange="onInterestChange" value="{{interestIndex}}" range="{{interestOptions}}">
+        <view class="picker">
+          {{interestOptions[interestIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="filter-item">
+      <text class="filter-label">预算范围</text>
+      <picker bindchange="onBudgetChange" value="{{budgetIndex}}" range="{{budgetOptions}}">
+        <view class="picker">
+          {{budgetOptions[budgetIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <button class="filter-btn" bindtap="onFilter">应用筛选</button>
+  </view>
+  
+  <!-- 搜索结果 -->
+  <view class="result-section">
+    <text class="result-title">搜索结果</text>
+    <view class="strategy-list">
+      <view class="strategy-item" wx:for="{{strategies}}" wx:key="index" bindtap="goToDetail">
+        <image class="strategy-img" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="strategy-info">
+          <text class="strategy-title">{{item.title}}</text>
+          <text class="strategy-meta">{{item.days}}天 | {{item.people}} | {{item.budget}} | {{item.views}}浏览</text>
+          <text class="strategy-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 无结果提示 -->
+    <view wx:if="{{strategies.length === 0}}" class="no-result">
+      <text>暂无符合条件的攻略</text>
+    </view>
+  </view>
+</view>

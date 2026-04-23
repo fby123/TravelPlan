@@ -1,0 +1,59 @@
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="search-bar">
+    <input 
+      class="search-input" 
+      placeholder="输入目的地检索攻略" 
+      bindinput="onSearchInput"
+      bindconfirm="onSearch"
+    />
+    <button class="search-btn" bindtap="onSearch">搜索</button>
+  </view>
+  
+  <!-- 热门推荐 -->
+  <view class="section">
+    <text class="section-title">热门推荐</text>
+    <view class="recommend-list">
+      <view class="recommend-item" wx:for="{{hotDestinations}}" wx:key="index" bindtap="goToDetail">
+        <image class="recommend-img" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="recommend-info">
+          <text class="recommend-title">{{item.title}}</text>
+          <text class="recommend-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 功能入口 -->
+  <view class="section">
+    <text class="section-title">核心功能</text>
+    <view class="feature-list">
+      <view class="feature-item" bindtap="goToGenerate">
+        <view class="feature-icon generate-icon"></view>
+        <text class="feature-text">生成攻略</text>
+      </view>
+      <view class="feature-item" bindtap="goToRoute">
+        <view class="feature-icon route-icon"></view>
+        <text class="feature-text">路线规划</text>
+      </view>
+      <view class="feature-item" bindtap="goToCollection">
+        <view class="feature-icon collection-icon"></view>
+        <text class="feature-text">我的收藏</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 热门攻略 -->
+  <view class="section">
+    <text class="section-title">热门攻略</text>
+    <view class="strategy-list">
+      <view class="strategy-item" wx:for="{{hotStrategies}}" wx:key="index" bindtap="goToStrategyDetail">
+        <image class="strategy-img" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="strategy-info">
+          <text class="strategy-title">{{item.title}}</text>
+          <text class="strategy-meta">{{item.days}}天 | {{item.people}} | {{item.views}}浏览</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

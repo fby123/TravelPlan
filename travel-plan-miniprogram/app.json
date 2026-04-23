@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/route/route",
+    "pages/profile/profile",
+    "pages/generate/generate",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4A90E2",
+    "navigationBarTitleText": "途绘攻略",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab-home.png",
+        "selectedIconPath": "images/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "攻略检索",
+        "iconPath": "images/tab-search.png",
+        "selectedIconPath": "images/tab-search-active.png"
+      },
+      {
+        "pagePath": "pages/route/route",
+        "text": "路线规划",
+        "iconPath": "images/tab-route.png",
+        "selectedIconPath": "images/tab-route-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "images/tab-profile.png",
+        "selectedIconPath": "images/tab-profile-active.png"
+      }
+    ],
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "selectedColor": "#4A90E2",
+    "color": "#666666"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,170 @@
+/* 搜索框样式 */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 8rpx 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  padding: 12rpx;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 6rpx;
+  padding: 10rpx 20rpx;
+  font-size: 14px;
+  margin-left: 12rpx;
+}
+
+/* 区域标题 */
+.section {
+  margin-bottom: 24rpx;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+  color: #333;
+}
+
+/* 热门推荐列表 */
+.recommend-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12rpx;
+}
+
+.recommend-item {
+  background-color: white;
+  border-radius: 8rpx;
+  overflow: hidden;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.recommend-img {
+  width: 100%;
+  height: 120rpx;
+  object-fit: cover;
+}
+
+.recommend-info {
+  padding: 12rpx;
+}
+
+.recommend-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4rpx;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.recommend-desc {
+  font-size: 12px;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 功能入口列表 */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24rpx;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 24rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-bottom: 12rpx;
+}
+
+.generate-icon {
+  background-color: #E3F2FD;
+}
+
+.route-icon {
+  background-color: #E8F5E9;
+}
+
+.collection-icon {
+  background-color: #FFF3E0;
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* 热门攻略列表 */
+.strategy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.strategy-item {
+  display: flex;
+  background-color: white;
+  border-radius: 8rpx;
+  overflow: hidden;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.strategy-img {
+  width: 160rpx;
+  height: 120rpx;
+  object-fit: cover;
+}
+
+.strategy-info {
+  flex: 1;
+  padding: 16rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.strategy-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8rpx;
+}
+
+.strategy-meta {
+  font-size: 12px;
+  color: #666;
+}
