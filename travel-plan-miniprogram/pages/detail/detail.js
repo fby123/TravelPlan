@@ -32,14 +32,14 @@ Page({
           desc: '中国明清两代的皇家宫殿，世界上现存规模最大、保存最为完整的木质结构古建筑之一。',
           openTime: '8:30-17:00',
           ticket: '60元/人',
-          image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Forbidden%20City%20Beijing&image_size=landscape_4_3'
+          image: '/images/destination-beijing.jpg'
         },
         {
           name: '八达岭长城',
           desc: '中国最具代表性的长城段落之一，以其宏伟的建筑和壮丽的自然风光闻名。',
           openTime: '7:30-18:00',
           ticket: '40元/人',
-          image: 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Great%20Wall%20of%20China%20Badaling&image_size=landscape_4_3'
+          image: '/images/destination-beijing.jpg'
         }
       ],
       food: [
