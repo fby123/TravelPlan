@@ -18,26 +18,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=home%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color&image_size=square",
-        "selectedIconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=home%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color%2C%20selected%20state&image_size=square"
+        "iconPath": "images/tab-home.png",
+        "selectedIconPath": "images/tab-home.png"
       },
       {
         "pagePath": "pages/search/search",
         "text": "攻略检索",
-        "iconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=search%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color&image_size=square",
-        "selectedIconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=search%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color%2C%20selected%20state&image_size=square"
+        "iconPath": "images/tab-search.png",
+        "selectedIconPath": "images/tab-search.png"
       },
       {
         "pagePath": "pages/route/route",
         "text": "路线规划",
-        "iconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=route%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color&image_size=square",
-        "selectedIconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=route%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color%2C%20selected%20state&image_size=square"
+        "iconPath": "images/tab-route.png",
+        "selectedIconPath": "images/tab-route.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "个人中心",
-        "iconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=profile%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color&image_size=square",
-        "selectedIconPath": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=profile%20icon%20for%20travel%20app%2C%20simple%20minimal%2C%20blue%20color%2C%20selected%20state&image_size=square"
+        "iconPath": "images/tab-profile.png",
+        "selectedIconPath": "images/tab-profile.png"
       }
     ],
     "backgroundColor": "#ffffff",
