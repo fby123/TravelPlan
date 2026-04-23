@@ -84,14 +84,14 @@ Page({
           longitude: 116.404,
           latitude: 39.915,
           title: '起点',
-          iconPath: '/images/marker-start.png'
+          iconPath: ''
         },
         {
           id: 1,
           longitude: 116.418,
           latitude: 39.914,
           title: '终点',
-          iconPath: '/images/marker-end.png'
+          iconPath: ''
         }
       ],
       polyline: [

@@ -1,7 +1,7 @@
 <view class="container">
   <!-- 个人信息 -->
   <view class="user-info">
-    <image class="avatar" src="{{userInfo.avatarUrl || '/images/avatar.png'}}"></image>
+    <image class="avatar" src="{{userInfo.avatarUrl || ''}}"></image>
     <view class="user-details">
       <text class="nickname">{{userInfo.nickName || '未登录'}}</text>
       <text class="bio">{{userInfo.bio || '这个人很懒，什么都没写'}}</text>
