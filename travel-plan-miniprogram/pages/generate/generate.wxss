@@ -1,0 +1,146 @@
+/* 区域样式 */
+.section {
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 16rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+  color: #333;
+}
+
+/* 输入项样式 */
+.input-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16rpx;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8rpx;
+}
+
+.input {
+  padding: 12rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 6rpx;
+  font-size: 14px;
+}
+
+.picker {
+  padding: 12rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 6rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.textarea {
+  padding: 12rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 6rpx;
+  font-size: 14px;
+  min-height: 120rpx;
+  resize: none;
+}
+
+/* 生成按钮 */
+.generate-btn {
+  width: 100%;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 6rpx;
+  padding: 16rpx;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24rpx;
+}
+
+/* 结果区域 */
+.result-section {
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+  color: #333;
+}
+
+/* 攻略内容 */
+.strategy-content {
+  margin-bottom: 24rpx;
+}
+
+.strategy-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.strategy-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+/* 每日行程 */
+.strategy-day {
+  margin-bottom: 20rpx;
+}
+
+.day-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.day-content {
+  padding-left: 16rpx;
+}
+
+.day-detail {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  display: block;
+}
+
+/* 注意事项 */
+.strategy-notes {
+  font-size: 14px;
+  color: #666;
+  margin-top: 16rpx;
+  padding-top: 16rpx;
+  border-top: 1rpx solid #eee;
+  display: block;
+}
+
+/* 保存按钮 */
+.save-btn {
+  width: 100%;
+  background-color: #52c41a;
+  color: white;
+  border: none;
+  border-radius: 6rpx;
+  padding: 14rpx;
+  font-size: 14px;
+  margin-top: 16rpx;
+}

@@ -1,0 +1,68 @@
+<view class="container">
+  <!-- 路线类型切换 -->
+  <view class="route-type">
+    <button 
+      wx:for="{{routeTypes}}" 
+      wx:key="index" 
+      class="type-btn {{currentType === index ? 'active' : ''}}"
+      bindtap="switchRouteType"
+      data-index="{{index}}"
+    >
+      {{routeTypes[index]}}
+    </button>
+  </view>
+  
+  <!-- 地图区域 -->
+  <view class="map-container">
+    <map 
+      id="map" 
+      class="map" 
+      longitude="{{longitude}}" 
+      latitude="{{latitude}}" 
+      scale="14" 
+      markers="{{markers}}" 
+      polyline="{{polyline}}"
+      bindmarkertap="onMarkerTap"
+      bindregionchange="onRegionChange"
+    ></map>
+  </view>
+  
+  <!-- 路线输入 -->
+  <view class="route-input">
+    <view class="input-item">
+      <text class="input-label">起点</text>
+      <input 
+        class="input" 
+        placeholder="输入起点" 
+        value="{{startPoint}}"
+        bindinput="onStartInput"
+      />
+      <button class="location-btn" bindtap="getCurrentLocation">
+        <text class="location-icon">📍</text>
+      </button>
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">终点</text>
+      <input 
+        class="input" 
+        placeholder="输入终点" 
+        value="{{endPoint}}"
+        bindinput="onEndInput"
+      />
+    </view>
+    
+    <button class="plan-btn" bindtap="planRoute">规划路线</button>
+  </view>
+  
+  <!-- 路线详情 -->
+  <view class="route-detail" wx:if="{{routeDetail.length > 0}}">
+    <text class="detail-title">路线详情</text>
+    <view class="detail-list">
+      <view class="detail-item" wx:for="{{routeDetail}}" wx:key="index">
+        <text class="detail-step">{{index + 1}}</text>
+        <text class="detail-info">{{item}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,108 @@
+<view class="container">
+  <!-- 基础参数设置 -->
+  <view class="section">
+    <text class="section-title">基础参数</text>
+    
+    <view class="input-item">
+      <text class="input-label">目的地</text>
+      <input 
+        class="input" 
+        placeholder="输入目的地" 
+        value="{{destination}}"
+        bindinput="onDestinationInput"
+      />
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">出行天数</text>
+      <picker bindchange="onDaysChange" value="{{daysIndex}}" range="{{daysOptions}}">
+        <view class="picker">
+          {{daysOptions[daysIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">出行人群</text>
+      <picker bindchange="onPeopleChange" value="{{peopleIndex}}" range="{{peopleOptions}}">
+        <view class="picker">
+          {{peopleOptions[peopleIndex]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  
+  <!-- 个性化参数设置 -->
+  <view class="section">
+    <text class="section-title">个性化参数</text>
+    
+    <view class="input-item">
+      <text class="input-label">预算范围</text>
+      <picker bindchange="onBudgetChange" value="{{budgetIndex}}" range="{{budgetOptions}}">
+        <view class="picker">
+          {{budgetOptions[budgetIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">兴趣偏好</text>
+      <picker bindchange="onInterestChange" value="{{interestIndex}}" range="{{interestOptions}}">
+        <view class="picker">
+          {{interestOptions[interestIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">住宿偏好</text>
+      <picker bindchange="onAccommodationChange" value="{{accommodationIndex}}" range="{{accommodationOptions}}">
+        <view class="picker">
+          {{accommodationOptions[accommodationIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">交通偏好</text>
+      <picker bindchange="onTransportChange" value="{{transportIndex}}" range="{{transportOptions}}">
+        <view class="picker">
+          {{transportOptions[transportIndex]}}
+        </view>
+      </picker>
+    </view>
+    
+    <view class="input-item">
+      <text class="input-label">特殊需求</text>
+      <textarea 
+        class="textarea" 
+        placeholder="输入特殊需求（如避开人流、残疾人友好、带宠物出行等）" 
+        value="{{specialNeeds}}"
+        bindinput="onSpecialNeedsInput"
+      ></textarea>
+    </view>
+  </view>
+  
+  <!-- 生成按钮 -->
+  <button class="generate-btn" bindtap="generateStrategy" disabled="{{isGenerating}}">
+    {{isGenerating ? '生成中...' : '生成攻略'}}
+  </button>
+  
+  <!-- 攻略结果 -->
+  <view class="result-section" wx:if="{{strategyResult}}">
+    <text class="result-title">生成的攻略</text>
+    <view class="strategy-content">
+      <text class="strategy-title">{{strategyResult.title}}</text>
+      <text class="strategy-meta">{{strategyResult.meta}}</text>
+      <view class="strategy-day" wx:for="{{strategyResult.days}}" wx:key="index">
+        <text class="day-title">第{{index + 1}}天</text>
+        <view class="day-content">
+          <text class="day-detail" wx:for="{{item.activities}}" wx:key="actIndex">• {{item}}
+</text>
+        </view>
+      </view>
+      <text class="strategy-notes">{{strategyResult.notes}}</text>
+    </view>
+    <button class="save-btn" bindtap="saveStrategy">保存攻略</button>
+  </view>
+</view>

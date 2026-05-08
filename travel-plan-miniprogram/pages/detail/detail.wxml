@@ -1,0 +1,66 @@
+<view class="container">
+  <!-- 攻略标题 -->
+  <view class="strategy-header">
+    <text class="strategy-title">{{strategy.title}}</text>
+    <text class="strategy-meta">{{strategy.meta}}</text>
+    <view class="strategy-actions">
+      <button class="action-btn" bindtap="collectStrategy">
+        <text class="action-icon">{{isCollected ? '❤️' : '🤍'}}</text>
+        <text class="action-text">{{isCollected ? '已收藏' : '收藏'}}</text>
+      </button>
+      <button class="action-btn" bindtap="shareStrategy">
+        <text class="action-icon">📤</text>
+        <text class="action-text">分享</text>
+      </button>
+    </view>
+  </view>
+  
+  <!-- 每日行程 -->
+  <view class="section">
+    <text class="section-title">行程安排</text>
+    <view class="day-list">
+      <view class="day-item" wx:for="{{strategy.days}}" wx:key="index">
+        <text class="day-title">第{{index + 1}}天</text>
+        <view class="day-content">
+          <view class="activity-item" wx:for="{{item.activities}}" wx:key="actIndex">
+            <text class="activity-dot">•</text>
+            <text class="activity-text">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 景点介绍 -->
+  <view class="section" wx:if="{{strategy.attractions && strategy.attractions.length > 0}}">
+    <text class="section-title">景点介绍</text>
+    <view class="attraction-list">
+      <view class="attraction-item" wx:for="{{strategy.attractions}}" wx:key="index">
+        <image class="attraction-img" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="attraction-info">
+          <text class="attraction-name">{{item.name}}</text>
+          <text class="attraction-desc">{{item.desc}}</text>
+          <text class="attraction-info-text">开放时间：{{item.openTime}}</text>
+          <text class="attraction-info-text">门票：{{item.ticket}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 餐饮推荐 -->
+  <view class="section" wx:if="{{strategy.food && strategy.food.length > 0}}">
+    <text class="section-title">餐饮推荐</text>
+    <view class="food-list">
+      <view class="food-item" wx:for="{{strategy.food}}" wx:key="index">
+        <text class="food-name">{{item.name}}</text>
+        <text class="food-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 注意事项 -->
+  <view class="section">
+    <text class="section-title">注意事项</text>
+    <text class="notes">{{strategy.notes}}</text>
+  </view>
+</view>
